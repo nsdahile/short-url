@@ -7,4 +7,3 @@ const db = mongoose
 
 // module.exports = new Promise(db);
 module.exports = db;
-
