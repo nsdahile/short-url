@@ -8,6 +8,13 @@ const urlSchema = new Schema({
     required: true,
     trim: true,
   },
+  customSuffix: {
+    type: String,
+    trim: true,
+    unique: true,
+    sparse: true,
+    minlength:1
+  },
 });
 
 module.exports = mongoose.model("url", urlSchema);

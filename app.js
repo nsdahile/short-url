@@ -14,7 +14,7 @@ app.use("/api", urlRoute);
 app.use(visitUrlRoute);
 
 db.then(() =>
-  app.listen(3000, (err) => {
-    console.log("Server is running on port 3000");
+  app.listen(8000, (err) => {
+    console.log("Server is running");
   })
 ).catch((err) => console.log(err));
